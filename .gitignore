@@ -12,3 +12,6 @@ venv/
 Thumbs.db
 # Ignore Python cache directories
 __pycache__/
+
+# Mypy cache
+.mypy_cache/
