@@ -76,11 +76,11 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: klogger
-                path: dist/klogger.exe
+                path: ./dist/klogger.exe
 
             - name: Create GitHub Release Linux
               if: startsWith(github.ref, 'refs/tags/')
               uses: softprops/action-gh-release@v1
               with:
-                files: dist/klogger.exe
+                files: ./dist/klogger.exe
    
