@@ -1,0 +1,6 @@
+[FORMAT]
+max-line-length=200
+disable=missing-module-docstring
+
+[MESSAGES CONTROL]
+disable=missing-final-newline
