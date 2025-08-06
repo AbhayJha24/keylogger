@@ -1,6 +1,10 @@
 name: Linting and Building
 description: This workflow runs on every push to the repository and performs linting and building tasks.
 on: [push]
+
+permissions:
+  contents: write
+
 jobs:
     Linting:
         name: Linting Job
@@ -70,7 +74,7 @@ jobs:
                 name: klogger
                 path: dist/klogger.exe
 
-            - name: Create GitHub Release Linux
+            - name: Create GitHub Release Windows
               if: startsWith(github.ref, 'refs/tags/')
               uses: softprops/action-gh-release@v1
               with:
