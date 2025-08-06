@@ -19,3 +19,7 @@ __pycache__/
 # Local Build directories
 build/
 dist/
+
+# PyInstaller specific files
+*.spec
+klogger.spec
