@@ -60,10 +60,10 @@ jobs:
               run: |
                 pyinstaller --onefile klogger.py
                 REM Handle build failure
-                IF %ERRORLEVEL% NEQ 0 (
-                    echo Build failed.
-                    exit /b 1
-                )
+                if ($LASTEXITCODE -ne 0) {
+                    Write-Host "Build failed."
+                    exit 1
+                }
 
             - name: Archive build artifacts
               uses: actions/upload-artifact@v4
