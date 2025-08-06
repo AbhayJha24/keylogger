@@ -15,3 +15,7 @@ __pycache__/
 
 # Mypy cache
 .mypy_cache/
+
+# Local Build directories
+build/
+dist/

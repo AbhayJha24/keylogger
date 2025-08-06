@@ -1,0 +1,6 @@
+# Dependencies for keylogger project
+pynput
+types-pynput
+pylint
+mypy
+pyinstaller
