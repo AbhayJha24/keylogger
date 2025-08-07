@@ -15,5 +15,6 @@ with open('log.txt', 'w', encoding='utf-8') as f:
             listener.stop()
 
     # Collect events until released
+    print("KeyLogger started. Press keys (Esc to exit)...")
     with Listener(on_release=on_release) as listener:
         listener.join()
