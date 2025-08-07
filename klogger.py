@@ -15,6 +15,16 @@ with open('log.txt', 'w', encoding='utf-8') as f:
             listener.stop()
 
     # Collect events until released
-    print("KeyLogger started. Press keys (Esc to exit)...")
+    print(r"""
+ _  ___                             
+| |/ / | ___   __ _  __ _  ___ _ __ 
+| ' /| |/ _ \ / _` |/ _` |/ _ \ '__|
+| . \| | (_) | (_| | (_| |  __/ |   
+|_|\_\_|\___/ \__, |\__, |\___|_|   
+              |___/ |___/                
+          """)
+    print("KeyLogger is running.")
+    print("You can minimize this window and continue working.")
+    print("All keystrokes will be logged until you press the Esc key to stop.")
     with Listener(on_release=on_release) as listener:
         listener.join()
